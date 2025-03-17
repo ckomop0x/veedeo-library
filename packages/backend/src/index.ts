@@ -15,7 +15,7 @@ const start = async () => {
     await fastify.register(cors, { origin: process.env.CORS_ORIGIN || '*' });
     await fastify.register(videosRoutes);
     await fastify.register(videoRoutes);
-    await fastify.listen({ port: PORT });
+    await fastify.listen({ port: PORT, host: '0.0.0.0' });
     console.log(`🚀 Server ready at http://localhost:${PORT}`);
   } catch (err) {
     fastify.log.error(err);

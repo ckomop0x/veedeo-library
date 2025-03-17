@@ -28,8 +28,12 @@ jobs:
           filters: |
             frontend:
               - 'packages/frontend/**'
+              - 'package.json'
+              - 'package-lock.json'
             backend:
               - 'packages/backend/**'
+              - 'package.json'
+              - 'package-lock.json'
 
   test-frontend:
     name: Test Frontend

@@ -9,6 +9,15 @@ Built using **Fastify, Next.js, TypeScript, Redux, and TailwindCSS** in an **npm
 
 ---
 
+## 🌐 Live Demo
+
+Application is deployed on Vercel and Render, you can access it using the following links (please note that the backend may take up-to 50 seconds to start due to the free tier limitations):
+
+- **Frontend:** [Video Library Frontend](https://veedeo-library.vercel.app/)
+- **Backend API:** [Video Library API](https://veedeo-library-api.onrender.com/)
+
+---
+
 ## 📂 Monorepo Structure
 This project follows a **monorepo architecture** using **npm workspaces**.  
 The repository is organized as follows:

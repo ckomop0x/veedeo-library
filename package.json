@@ -1,0 +1,39 @@
+{
+  "name": "veedeo-library",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "prestart": "npm run build",
+    "start": "concurrently \"npm run start --workspace=frontend\" \"npm run start --workspace=backend\"",
+    "build": "concurrently \"npm run build --workspace=frontend\" \"npm run build --workspace=backend\"",
+    "test": "concurrently \"npm run test --workspace=frontend\" \"npm run test --workspace=backend\"",
+    "check-ts": "concurrently \"npm run check-ts --workspace=frontend\" \"npm run check-ts --workspace=backend\"",
+    "prepare": "husky"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "Pavel Klochkov",
+    "email": "paul.klochkov@gmail.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "typescript": "5.7.3"
+  },
+  "devDependencies": {
+    "@types/supertest": "^6.0.2",
+    "concurrently": "^9.1.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.8"
+  },
+  "engines": {
+    "node": ">=18.18.x"
+  }
+}

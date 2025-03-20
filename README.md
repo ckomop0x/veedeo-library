@@ -9,7 +9,7 @@ Built using **Fastify, Next.js, TypeScript, Redux, and TailwindCSS** in an **npm
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
 Application is deployed on Vercel and Render, you can access it using the following links (please note that the backend may take up-to 50 seconds to start due to the free tier limitations):
 
@@ -18,7 +18,7 @@ Application is deployed on Vercel and Render, you can access it using the follow
 
 ---
 
-## 📂 Monorepo Structure
+## Monorepo Structure
 This project follows a **monorepo architecture** using **npm workspaces**.  
 The repository is organized as follows:
 
@@ -32,7 +32,7 @@ video-library/
 │── README.md      → Project documentation
 ```
 
-### 📦 Packages
+### Packages
 - **`frontend/`** → Next.js application with Redux, TailwindCSS.
 - **`backend/`** → Fastify API server with Zod validation.
 
@@ -54,14 +54,14 @@ npm install
 ## Environment Variables
 Both **frontend and backend** uses environment variables, to simplify initial project start I provided default values, which allows to start project without setting up the `dotenv` files.
 
-### 1️⃣ Backend (`packages/backend/.env`)
+### Backend (`packages/backend/.env`)
 Create a `.env` file inside `packages/backend` and configure:
 ```
 PORT=4000
 CORS_ORIGIN=*
 ```
 
-### 2️⃣ Frontend (`packages/frontend/.env.local`)
+### Frontend (`packages/frontend/.env.local`)
 Create a `.env.local` file inside `packages/frontend`:
 ```
 NEXT_PUBLIC_API_URL=http://localhost:4000
@@ -69,7 +69,7 @@ NEXT_PUBLIC_API_URL=http://localhost:4000
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 Runs the Fastify API on **`http://localhost:4000`** & the Next.js app on **`http://localhost:3000`**. Unless you change the ports in the environment variables.
 
 ### Development Mode
@@ -86,7 +86,7 @@ Builds both projects in production mode and runs them production server.
 
 ---
 
-## 🧪 Testing
+## Testing
 ### Run All Tests
 ```sh
 npm run test
@@ -104,8 +104,8 @@ The backend provides a REST API with the following endpoints:
 
 ---
 
-## 🚀 Deployment
-### 1️⃣ Backend Deployment
+## Deployment
+### Backend Deployment
 - Deploy using **Vercel / AWS / DigitalOcean**.
 - Ensure the following **production environment variables** are set (you can apply stricter cors origin in production):
 ```
@@ -113,7 +113,7 @@ PORT=4000
 CORS_ORIGIN=* # Change to your domain
 ```
 
-### 2️⃣ Frontend Deployment
+### Frontend Deployment
 #### Deploy to Vercel
 1. Install Vercel CLI:
 ```sh
@@ -133,8 +133,3 @@ NEXT_PUBLIC_API_URL=https://your-backend-url.com # change to your backend URL
 
 ## 👤 Author
 - **Name:** Pavel Klochkov
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**.

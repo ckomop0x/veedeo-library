@@ -11,10 +11,10 @@ Built using **Fastify, Next.js, TypeScript, Redux, and TailwindCSS** in an **npm
 
 ## Live Demo
 
-Application is deployed on Vercel and Render, you can access it using the following links (please note that the backend may take up-to 50 seconds to start due to the free tier limitations):
+The application is deployed on Vercel(FE) and Hetzner(BE); you can access it using the following links:
 
 - **Frontend:** [Video Library Frontend](https://veedeo-library.vercel.app/)
-- **Backend API:** [Video Library API](https://veedeo-library-api.onrender.com/)
+- **Backend API:** [Video Library API](https://veedeo-lib-api.ckomop0x.me/)
 
 ---
 

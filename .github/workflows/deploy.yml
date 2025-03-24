@@ -1,4 +1,4 @@
-name: Manual Deploy
+name: Manual Deploy Backend
 
 on:
   workflow_dispatch:

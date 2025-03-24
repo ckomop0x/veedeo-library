@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
     "prestart": "npm run build",
-    "start": "concurrently \"npm run start --workspace=frontend\" \"npm run start --workspace=backend\"",
-    "build": "concurrently \"npm run build --workspace=frontend\" \"npm run build --workspace=backend\"",
+    "start": "concurrently \"npm run start:frontend\" \"start:backend\"",
+    "start:frontend": "npm run start --workspace=frontend",
+    "start:backend": "npm run start --workspace=backend",
+    "build": "concurrently \"build:frontend\" \"build:backend\"",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
     "test": "concurrently \"npm run test --workspace=frontend\" \"npm run test --workspace=backend\"",
     "check-ts": "concurrently \"npm run check-ts --workspace=frontend\" \"npm run check-ts --workspace=backend\"",
     "prepare": "husky"
@@ -23,7 +27,8 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "typescript": "5.7.3"
+    "typescript": "5.7.3",
+    "husky": "9.1.7"
   },
   "devDependencies": {
     "@types/supertest": "^6.0.2",

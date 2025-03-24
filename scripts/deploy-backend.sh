@@ -24,7 +24,7 @@ ssh -tt "$DEPLOY_USER@$DEPLOY_HOST" "su - nodejs -c \"bash -lc '
   npm ci
 
   echo
-  echo \\\"🔧 Building admin panel...\\\"
+  echo \\\"🔧 Building backend...\\\"
   echo \\\"---------------------------\\\"
   npm run build --workspace=backend
 
